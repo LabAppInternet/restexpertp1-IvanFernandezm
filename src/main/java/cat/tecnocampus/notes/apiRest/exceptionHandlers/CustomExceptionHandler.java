@@ -31,6 +31,5 @@ public class CustomExceptionHandler {
     public ResponseEntity<String> handleNoteNotOwnedException(NoteDoesNotExistException ex) {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());
     }
-    @ExceptionHandler(.class)
 
 }
